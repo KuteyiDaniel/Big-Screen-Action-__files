@@ -1,0 +1,168 @@
+
+body {
+  background-image: url("/v2/bigscreen/site_files/bigscreenaction-bg.png");
+  background-position: center top;
+}
+
+.vid_thumb_grid_banner_join {
+  width: 345px;
+  height: 155px;
+  background: url("/v2/bigscreen/site_files/banner-join-sm.jpg");
+  display: inline-block;
+  float: left;
+  overflow: hidden;
+}
+
+.vid_thumb_grid_banner_credits {
+  width: 345px;
+  height: 155px;
+  background: url("/v2/bigscreen/site_files/banner-credits-sm.jpg");
+  display: inline-block;
+  float: left;
+  overflow: hidden;
+}
+
+#comment_ticker_outer_container {
+  background-image: url("/v2/bigscreen/site_files/comment-ticker-bg.gif");
+  width: 68%;
+  margin-bottom: 10px;
+  height: 27px;
+  overflow: hidden;
+  padding-right: 10px;
+}
+
+@media only screen and (max-width: 993px) {
+  #comment_ticker_outer_container {
+    width: 100% !important;
+  }
+}
+
+/*
+ **********************
+ *Homepage Popup
+ **********************
+ */
+
+#desktopModal {
+  display: none;
+}
+
+#tabletModal {
+  display: none;
+}
+
+#mobileModal {
+  display: none;
+}
+
+.modalDesk {
+  /*    background-image: url("http://localhost:50791/ddymes/v2/ddyme/site_files/popup_desktop.png");
+*/
+  background-size: cover; /* <------ */
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  background-color: white;
+  border: 1px solid black;
+  z-index: 1;
+}
+
+.modalTab {
+  /*    background-image: url("http://localhost:50791/ddymes/v2/ddyme/site_files/popup_mob.png");
+*/
+  background-size: cover; /* <------ */
+  background-repeat: no-repeat;
+  /* background-position: center center; */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  background-color: white;
+  border: 1px solid rgb(150, 145, 145);
+  z-index: 1;
+}
+
+.modalMob {
+  /*    background-image: url("http://localhost:50791/ddymes/v2/ddyme/site_files/popup_mob.png");
+*/
+  background-size: cover; /* <------ */
+  background-repeat: no-repeat;
+  /* background-position: center center; */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 93%;
+  height: 80%;
+  background-color: white;
+  box-shadow: 1px 1px 9px 10px #878383;
+  border: 1px solid thistle;
+  z-index: 1;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  height: 100%;
+  width: 100%; /* Could be more or less, depending on screen size */
+}
+
+.modal-content:hover {
+  cursor: pointer;
+}
+
+/* The Close Button For Desktop*/
+.close {
+  padding: 5px 10px;
+  color: #000;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* The Close Button For tablet*/
+
+.closeTablet {
+  padding: 5px 10px;
+  color: thistle;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closeTablet:hover,
+.closeTablet:focus {
+  color: thistle;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* The Close Button For Mobile*/
+
+.closeMobile {
+  padding: 5px 10px;
+  color: #fff;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closeMobile:hover,
+.closeMobile:focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
